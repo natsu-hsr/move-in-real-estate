@@ -1,11 +1,13 @@
 import express from 'express'
+import cookieParser from 'cookie-parser';
+
 import postRoute from './route/post.route.js';
 import authRoute from './route/auth.route.js';
 
 const app = express();
 
-// parsers
 app.use(express.json());
+app.use(cookieParser());
 
 app.use('/api/posts', postRoute);
 

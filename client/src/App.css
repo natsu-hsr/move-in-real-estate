@@ -1,0 +1,25 @@
+#root {}
+
+.wrapper {
+	margin: auto;
+}
+
+
+@media (min-width: 1920px) {
+	.wrapper {
+		max-width: 90rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.wrapper {
+		max-width: 80rem;
+	}
+}
+
+@media (min-width: 780px) {
+	.wrapper {
+		max-width: 760px;
+	}
+}
+
