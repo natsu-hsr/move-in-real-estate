@@ -2,12 +2,12 @@
 
 .wrapper {
 	margin: auto;
+	max-width: 80%;
 }
 
-
-@media (min-width: 1920px) {
+/* @media (min-width: 780px) {
 	.wrapper {
-		max-width: 90rem;
+		max-width: 760px;
 	}
 }
 
@@ -15,11 +15,10 @@
 	.wrapper {
 		max-width: 80rem;
 	}
-}
+} */
 
-@media (min-width: 780px) {
+@media (min-width: 1920px) {
 	.wrapper {
-		max-width: 760px;
+		max-width: 95rem;
 	}
 }
-
