@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import {Avatar, Button} from '@mantine/core';
 
 import {ReactComponent as Logo} from '../../assets/apparts-logo.svg';
@@ -6,6 +6,8 @@ import {ReactComponent as Logo} from '../../assets/apparts-logo.svg';
 import classes from './header.module.css';
 
 export const Header = () => {
+  const navigate = useNavigate();
+
   const isLoggedIn = false;
 
   return (
@@ -40,6 +42,9 @@ export const Header = () => {
             <Button
               className={classes.authButton}
               radius="sm"
+              onClick={() => {
+                navigate('/login');
+              }}
             >
               Login
             </Button>

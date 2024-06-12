@@ -1,0 +1,8 @@
+@import '../../shared/styles/colors.css';
+
+.input {
+  &:focus, &:focus-within {
+    /* outline-color: var(--main-green); */
+    border-color: var(--main-green);
+  }
+}

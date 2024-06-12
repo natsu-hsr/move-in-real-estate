@@ -1,0 +1,53 @@
+@import '../../shared/styles/colors.css';
+@import '../../shared/styles/sizes.css';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height));
+  /* margin-top: -5%; */
+}
+
+.title {
+  font-size: 36px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 40%;
+  min-width: calc(350px + 6rem);
+  padding: 3rem 3rem 2rem 3rem;
+  border: 1px var(--mantine-color-default-border) solid;
+  border-radius: 10px;
+}
+
+/* input fields */
+.field {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 350px;
+  min-width: 200px;
+  
+}
+
+.label {
+  font-size: 24px;
+  font-weight: 700 !important;
+}
+/* input fields */
+
+.submitButton {
+  width: 120px !important;
+  background-color: var(--main-green) !important;
+  color: var(--black) !important;
+}
+
+.link {
+  font-size: 14px;
+  color: var(--default-grey);
+}

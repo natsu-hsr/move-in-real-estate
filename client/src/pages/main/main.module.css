@@ -26,16 +26,17 @@
 
 .description {
   max-width: var(--form-max-width);
+  margin-bottom: 3rem;
 }
 
 .form {
-  margin-top: 3rem;
+  max-width: var(--form-max-width);
+  margin-bottom: 3rem;
 }
 
 .fields {
   display: flex;
   gap: 2px;
-  max-width: var(--form-max-width);
 }
 
 .field {
@@ -54,22 +55,22 @@
   }
 }
 
-.switch {
-  margin-bottom: 2rem;
+.segment {
+  margin-bottom: 1rem;
 
-  [class~=mantine-Switch-track] {
-    width: 120px;
-    height: 30px;
+  [class~=mantine-SegmentedControl-indicator] {
+    background-color: var(--main-green) !important;
   }
 }
 
-.switchLabel {
+.segmentLabel {
   display: flex;
   align-items: center;
 }
 
-.switchIcon {
+.segmentIcon {
   height: 16px;
+  width: auto;
 }
 
 .search {
@@ -92,11 +93,10 @@
 /* todo - add responsive */
 .image {
   position: absolute;
-  top: calc(50% + 100px);
+  top: calc(50% + (100vh / 10 ));
   right: 0;
-  max-width: 60%;
-  height: auto;
-  max-height: calc(100vh - 70px);
+  max-width: 56%;
+  max-height: calc(100vh);
 }
 
 /* @media (min-width: 1280px) {
@@ -104,3 +104,15 @@
     right: -35%;
   }
 } */
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--form-max-width);
+}
+
+.statName {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+}

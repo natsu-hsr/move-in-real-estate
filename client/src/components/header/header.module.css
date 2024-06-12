@@ -1,4 +1,5 @@
 @import '../../shared/styles/colors.css';
+@import '../../shared/styles/sizes.css';
 
 .wrapper {
   display: flex;
@@ -6,7 +7,7 @@
   justify-content: space-between;
   gap: 3rem;
   width: 100%;
-  height: 70px;
+  height: var(--header-height);
 }
 
 .logo {
